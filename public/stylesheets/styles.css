@@ -20,7 +20,7 @@ html, body {
 }
 
 #address1, #address2 {
-    width: 50%;
+    /*width: 50%;*/
 }
 #executeQuery, #clearEveything {
     margin: 20px;

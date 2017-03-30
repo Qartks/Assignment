@@ -1,25 +1,32 @@
 <div class="container">
 
-    <h1 class="text-center"> <strong>Amne Assignment</strong></h1>
+    <h1 class="text-center page-header"> <strong>Amne Assignment</strong></h1>
 
     <div id="map" class="text-center"></div>
 
-    <div id="input-area" class="text-center">
-
-        <div class="col-sm-6 col-md-6 col-lg-6">
-            <label for="address1"> Address One</label>
-            <input type="text" id="address1">
+    <div id="input-area" class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                  <span class="input-group-addon">
+                    <label for="address1">Address-1</label>
+                  </span>
+                 <input id="address1" type="text" class="form-control" placeholder="123 Austin TX">
+            </div>
         </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-6">
-            <label for="address2"> Address Two</label>
-            <input type="text" id="address2">
+        <div class="col-lg-6">
+            <div class="input-group">
+                  <span class="input-group-addon">
+                    <label for="address2">Address-2</label>
+                  </span>
+                <input id="address2" type="text" class="form-control" placeholder="234 Austin TX">
+            </div>
         </div>
-        <br>
+    </div>
+
+    <div>
         <a id="executeQuery" class="btn btn-primary btn-block"> Get the list! </a>
         <a id="clearEveything" class="btn btn-danger btn-block"> Clear! </a>
     </div>
-
 
     <table class="table">
         <thead>
