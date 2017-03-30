@@ -1,0 +1,44 @@
+<div class="container">
+
+    <h1 class="text-center"> <strong>Amne Assignment</strong></h1>
+
+    <div id="map" class="text-center"></div>
+
+    <div id="input-area" class="text-center">
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <label for="address1"> Address One</label>
+            <input type="text" id="address1">
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
+            <label for="address2"> Address Two</label>
+            <input type="text" id="address2">
+        </div>
+        <br>
+        <a id="executeQuery" class="btn btn-primary btn-block"> Get the list! </a>
+        <a id="clearEveything" class="btn btn-danger btn-block"> Clear! </a>
+    </div>
+
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Place</th>
+            <th>Total Distance(miles)</th>
+            <th>Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="real in model.realEstateAgents | orderBy: 'distance'">
+            <td>{{real.place.name}}</td>
+            <td>{{real.place.vicinity}}</td>
+            <td>{{real.distance * 0.000621371 | number:2}}</td>
+            <td>{{real.place.rating}}</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>

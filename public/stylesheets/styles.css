@@ -1,0 +1,29 @@
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 65px;
+    background: #f89406;
+}
+
+/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+#map {
+    height: 500px;
+    /*width: 500px;*/
+    margin: 40px;
+}
+
+#input-area {
+    margin: 25px;
+}
+
+#address1, #address2 {
+    width: 50%;
+}
+#executeQuery, #clearEveything {
+    margin: 20px;
+}
+
+
